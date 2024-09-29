@@ -1,7 +1,7 @@
 import { Typography, Box, Button, Grid } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-import { YELLOW_TEXT_COLOR, BLACK_TEXT_COLOR } from '../constants/theme.const';
+import { YELLOW, BLACK } from '../constants/theme.const';
 import { NavLinkProps } from '../interface/header';
 import { routesMapping } from '../routes/routes-mapping';
 
@@ -33,15 +33,15 @@ const NavLink = ({ name, isActive }: NavLinkProps): JSX.Element => {
         <Button
             onClick={handleClick}
             sx={{
-                color: BLACK_TEXT_COLOR,
+                color: BLACK,
                 fontWeight: 'bold',
                 fontSize: { xs: '16px', sm: '20px' },
                 textTransform: 'none',
                 marginRight: '10px',
                 backgroundColor: 'transparent',
                 '&:hover, &:active': {
-                    backgroundColor: YELLOW_TEXT_COLOR,
-                    color: BLACK_TEXT_COLOR,
+                    backgroundColor: YELLOW,
+                    color: BLACK,
                 },
                 '&:focus': {
                     outline: 'none',
@@ -58,8 +58,8 @@ export const HeaderComponent = (): JSX.Element => {
         <Box>
             <Grid container justifyContent="space-between" alignItems="center" paddingX={{ xs: '16px', md: '50px' }} paddingY="10px">
                 <Typography variant={'h5'} fontWeight={'bold'} fontSize={{ xs: '30px', md: '50px' }}>
-                    <span style={{ color: BLACK_TEXT_COLOR }}>Port</span>
-                    <span style={{ color: YELLOW_TEXT_COLOR }}>folio</span>
+                    <span style={{ color: BLACK }}>Port</span>
+                    <span style={{ color: YELLOW }}>folio</span>
                 </Typography>
                 <Box display={'flex'}>
                     {["Home", "Education", "Skills", "Experience", "Projects"].map((name, index) => (

@@ -1,7 +1,7 @@
 
 import { Box } from '@mui/material';
 
-import ProfilePhoto from '../assets/profile-photo.png'
+import ProfilePhoto from '../assets/home/profile-photo.png'
 
 export const ProfilePhotoComponent = (): JSX.Element => {
     return (

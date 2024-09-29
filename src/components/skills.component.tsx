@@ -1,26 +1,7 @@
 import { Box, Typography } from "@mui/material";
 
-import { BLACK_TRANSPARENT, BLACK_BACKGROUND_COLOR } from "../constants/theme.const";
-
-const technologies = [
-    { name: 'ReactJS', icon: '🔵' }, { name: 'ExpressJS', icon: '🟢' },
-    { name: 'NodeJS', icon: '🟩' }, { name: 'Redux', icon: '🟣' },
-    { name: 'Firebase', icon: '🔥' }, { name: 'Android', icon: '🤖' },
-    { name: 'MaterialUI', icon: '🎨' },{ name: 'Bootstrap', icon: '🟣' },
-    { name: 'HTML5', icon: '🟧' },{ name: 'CSS3', icon: '🔷' },
-    { name: 'JavaScript', icon: '🟨' },{ name: 'Java', icon: '☕' }, 
-    { name: 'Kotlin', icon: '🔵' },{ name: 'PHP', icon: '🐘' }, 
-    { name: 'Python', icon: '🐍' },{ name: 'C/C++', icon: '🔷' }, 
-    { name: 'MATLAB', icon: '🐱' },{ name: 'Verilog', icon: '🐱' },
-    { name: 'Vivado', icon: '🍃' },{ name: 'MySQL', icon: '🐬' }, 
-    { name: 'PostgreSQL', icon: '🐘' },{ name: 'GitLab', icon: '🔀' },
-    { name: 'GitHub', icon: '🐱' },{ name: 'VS Code', icon: '🐱' },
-    { name: 'Excel', icon: '🐱' },{ name: 'Word', icon: '🐱' },
-    { name: 'GitHub', icon: '🐱' },{ name: 'VS Code', icon: '🐱' },
-    { name: 'GitHub', icon: '🐱' },{ name: 'VS Code', icon: '🐱' },
-    { name: 'GitHub', icon: '🐱' },{ name: 'VS Code', icon: '🐱' },
-    { name: 'GitHub', icon: '🐱' },{ name: 'VS Code', icon: '🐱' },
-];
+import { BLACK_TRANSPARENT, WHITE, BLACK } from "../constants/theme.const";
+import { skillsIcon } from "../constants/icons.const";
 
 export const SkillsComponent = (): JSX.Element => {
     return (
@@ -41,11 +22,11 @@ export const SkillsComponent = (): JSX.Element => {
                 },
             }}
         >
-            {technologies.map((tech) => (
+            {Object.entries(skillsIcon).map(([key, tech]) => (
                 <Box
-                    key={tech.name}
+                    key={key}
                     sx={{
-                        backgroundColor: BLACK_BACKGROUND_COLOR,
+                        backgroundColor: WHITE,
                         borderRadius: '8px',
                         padding: 3,
                         textAlign: 'center',
@@ -56,10 +37,8 @@ export const SkillsComponent = (): JSX.Element => {
                         },
                     }}
                 >
-                    <Typography variant="h4" sx={{ mb: 1 }}>
-                        {tech.icon}
-                    </Typography>
-                    <Typography variant="body1" sx={{ color: '#fff' }}>
+                    <img src={tech.icon} alt={tech.name} style={{ width: '48px', height: '48px' }} />
+                    <Typography variant="body1" sx={{ color: BLACK, mt: 1 }}>
                         {tech.name}
                     </Typography>
                 </Box>
