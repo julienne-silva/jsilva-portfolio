@@ -25,6 +25,12 @@ function App() {
                         }}
                     >
                         <Routes>
+                            <Route index element={
+                                <>
+                                    <HomeComponent />
+                                    <ProfilePhotoComponent />
+                                </>
+                            } />
                             <Route path={routesMapping.home} element={
                                 <>
                                     <HomeComponent />
