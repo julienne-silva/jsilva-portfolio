@@ -1,5 +1,5 @@
 export const routesMapping = {
-    home: '/',
+    home: '/jsilva-portfolio',
     skills: {
         base: 'skills',
         path: '/skills',
