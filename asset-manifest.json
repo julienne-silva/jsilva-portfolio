@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/jsilva-portfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/jsilva-portfolio/static/js/main.3e0fe884.js",
+    "main.js": "/jsilva-portfolio/static/js/main.baba8eec.js",
     "static/js/453.1407b060.chunk.js": "/jsilva-portfolio/static/js/453.1407b060.chunk.js",
     "static/media/profile-photo.png": "/jsilva-portfolio/static/media/profile-photo.9f77eb0ffb7879b70434.png",
+    "static/media/matlab.svg": "/jsilva-portfolio/static/media/matlab.aefb29a1103c6e953dc998ecd6daad57.svg",
+    "static/media/verilog.svg": "/jsilva-portfolio/static/media/verilog.4ba7819c43952850a5943301bd4a90dd.svg",
     "index.html": "/jsilva-portfolio/index.html",
+    "static/media/systemc.svg": "/jsilva-portfolio/static/media/systemc.02443a399a674a4016217c3e539c33e0.svg",
     "main.e6c13ad2.css.map": "/jsilva-portfolio/static/css/main.e6c13ad2.css.map",
-    "main.3e0fe884.js.map": "/jsilva-portfolio/static/js/main.3e0fe884.js.map",
+    "main.baba8eec.js.map": "/jsilva-portfolio/static/js/main.baba8eec.js.map",
     "453.1407b060.chunk.js.map": "/jsilva-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.3e0fe884.js"
+    "static/js/main.baba8eec.js"
   ]
 }
